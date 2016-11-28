@@ -4,7 +4,7 @@
 template <class T>
 class shared{
 public:
-    shared(); /*strong*/
+    shared(); /*noexcept*/
     shared(T* ptr ); /*strong*/
     shared(const shared &); /*noexcept*/
     shared(shared &&); /* noexcept */
